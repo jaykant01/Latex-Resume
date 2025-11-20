@@ -1,0 +1,304 @@
+%-------------------------
+% Resume in Latex
+% Author : Jaykant
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}%\setmainfont{Times New Roman}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% \usepackage[T1]{fontenc}
+% \usepackage[T1]{fontenc}
+% \usepackage{cochineal}
+% \usepackage{fourier}
+
+% \usepackage{fontspec}
+% \usepackage{polyglossia}
+% \setmainlanguage{german}
+% \setmainfont{Times New Roman}
+
+% serif
+\usepackage{CormorantGaramond}
+\usepackage{charter}
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+\urlstyle{same}
+
+\definecolor{airforceblue}{rgb}{0.36, 0.54, 0.66}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSingleSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.1in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------\usepackage{fontspec}
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+%----------HEADING----------
+
+
+\begin{center}
+{\Huge \scshape\color{airforceblue} Jaykant Yadav} \\[6pt]
+
+\href{mailto:[jaykanty24092004@gmail.com]}{\color{black}{jaykanty24092004@gmail.com}} \textbar{}
+{+91 9112526004} \textbar{}
+Uttar Pradesh \\[6pt]
+
+\href{https://github.com/jaykant01}{\color{airforceblue}{\textbf{GitHub}}} \hspace{0.12cm} \textbar{} \hspace{0.12cm}
+\href{https://www.linkedin.com/in/jaykantyadav/}{\color{airforceblue}{\textbf{LinkedIn}}} \hspace{0.12cm} \textbar{} \hspace{0.12cm}
+\href{https://jaykant01.github.io/portfolio/}{\color{airforceblue}{\textbf{Portfolio}}} \hspace{0.12cm} \textbar{} \hspace{0.12cm}
+\href{https://leetcode.com/u/jaykant_02/}{\color{airforceblue}{\textbf{LeetCode}}} \hspace{0.12cm} \textbar{} \hspace{0.12cm}
+\href{https://codeforces.com/profile/jaykanty02}{\color{airforceblue}{\textbf{Codeforces}}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{\color{airforceblue}EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {GLA University}{Mathura, Uttar Pradesh, India}
+      {B.Tech in Computer Science \& Engineering - CGPA: 7.11}{September 2022 -- June 2026}
+    \vspace{-4pt}
+     \resumeSubheading
+      { R.D. NATIONAL \& W.A. SCIENCE COLLEGE}{Mumbai, Maharashtra, India}
+      {Higher Secondary School in Maths/Science - Percentage: 93.17}{ March 2020 -- June 2021}
+  \resumeSubHeadingListEnd
+  \vspace{-10pt}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{\color{airforceblue}TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{\normalsize{Programming Languages:}}{ \normalsize{Java, OOP, DSA, C}} \\
+      \vspace{1.2pt}
+      
+     \textbf{\normalsize{Libraries and Frameworks:}}{ \normalsize{Spring Boot, Spring MVC, Spring Security, JDBC, Angular}} \\
+      \vspace{1.2pt}
+      
+     \textbf{\normalsize{Databases and Tools:}}{ \normalsize{PostgreSQL, MySQL, AWS, Git, GitHub, Docker, Postman, Linux}}
+
+     % copy and paste above textbf block to add more 
+     }}
+ \end{itemize}
+ \vspace{-16pt}
+ 
+ %-----------EXPERIENCE-----------
+\section{\color{airforceblue}WORK EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {FullStack Development Intern}{} 
+      {QuickBizTech Solutions, Gaziabad, Uttar Pradesh}{April 2025 -- July 2025}
+      \resumeItemListStart
+            \resumeItem{\normalsize{Worked on a startup project developing a Tally ERP-like software, where I built multiple frontend pages
+ using Angular and implemented services to connect with backend APIs.}}
+            \resumeItem{\normalsize{Developed hands-on experience with version control using Git and
+ GitHub, understanding industry workflows and collaboration
+ practices.}}  
+            \resumeItem{\normalsize{Gained hands-on experience with how backend development
+ works using Spring Boot and learned to manage data interactions
+ using PostgreSQL for smooth and efficient operations.}}  
+      \resumeItemListEnd  
+
+    % copy and paste above resumeSubheading block to add more 
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+
+ %-----------PROJECTS-----------
+\section{\color{airforceblue}PROJECTS}
+
+\resumeItemListStart
+    % --------------------------------------------------
+    % PROJECT 1 — QRCode Service
+    % --------------------------------------------------
+    \resumeItem{
+        \textbf{QRCode Service} \textbar{}
+        \href{[url to github repo]}{\color{blue}\underline{GitHub}} 
+        \hfill \textit{Java, Spring Boot, Spring MVC, Maven}
+
+        \vspace{2pt}
+        \begin{itemize}\itemsep 1pt
+            \item Developed a QR code generation service using Spring Boot that dynamically creates QR codes for text, URLs, and custom payloads
+            \item Implemented a clean Spring MVC architecture with ControllerService separation for scalable and maintainable code.
+            \item Used ZXing library to generate high-resolution PNG QR codes and served them via REST API endpoints.
+            \item Integrated Lombok, Maven, and Spring DevTools to improve code readability, reduce boilerplate, and accelerate development.
+        \end{itemize}
+    }
+    \vspace{-5pt}
+    
+    % --------------------------------------------------
+    % PROJECT 2 — Address Book Web App
+    % --------------------------------------------------
+    \resumeItem{
+        \textbf{Address Book Web App} \textbar{} 
+        \href{[url to project repo]}{\color{blue}\underline{GitHub}} 
+        \hfill \textit{Angular, JWT, Node.js, TailwindCSS, MongoDB}
+        
+        \vspace{2pt}
+        \begin{itemize}\itemsep 1pt
+            \item Designed an intuitive and responsive UI, ensuring compatibility across devices and enhancing user experience.
+            \item Managed integration of RESTful APIs and secure authentication workflows.
+            \item Implemented smart duplicate detection to enhance data accuracy and reduce redundancy.
+            \item Added multi-language support to make the application accessible to a wider audience.
+            \item Improved user contact retrieval times by implementing optimized search and filter logic.
+        \end{itemize}
+    }
+    \vspace{-5pt}
+
+\resumeItemListEnd
+\vspace{-12pt}
+
+%
+
+%-----------CERTIFICATIONS---------------
+\section{\color{airforceblue}CERTIFICATIONS}
+    
+  \resumeItemListStart
+    \resumeItem{\normalsize{AWS Cloud Practitioner Essentials}}\href{https://drive.google.com/file/d/1Yl9euHmw-t6uUTG-tw4o-sFKDTDHzl49/view}{\color{blue}\underline{Link}}
+    \vspace{-5pt}
+    
+    \resumeItem{\normalsize{Postman API Fundamentals Student Expert}}\href{https://badges.parchment.com/public/assertions/UzZqRj-HR8-AlvtAZTwbSg?identity__email=jaykanty02@gmail.com}{\color{blue}\underline{Link}}
+
+    \resumeItem{\normalsize{30 days of Postman- for developers}}\href{https://badgr.com/public/assertions/zaL_7slfRfKFgKDbPFbZqQ?identity__email=jaykanty02%40gmail.com}{\color{blue}\underline{Link}}
+    
+    \vspace{-5pt}
+
+    % copy and paste above resumeItem block to add more 
+    
+  \resumeItemListEnd 
+      
+\vspace{-8pt}
+
+%-----------ACHIEVEMENTS & EXTRACURRICULAR ACTIVITIES---------------
+\section{\color{airforceblue}ACHIEVEMENTS \& EXTRACURRICULAR ACTIVITIES}
+    
+      \resumeItemListStart
+        \resumeItem{\normalsize{\textbf{Leet Code} Problems Solved - {200+} }} 
+        \vspace{-5pt}
+
+        % copy and paste above resumeItem block to add more 
+      \resumeItemListEnd 
+      
+\vspace{-12pt}
+
+\end{document}
